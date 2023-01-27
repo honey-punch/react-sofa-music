@@ -1,0 +1,22 @@
+:root {
+    /* color */
+    --main-color: #711ba3;
+    --white-color: #fff;
+    --black-color: #000;
+    --light-grey-color: #cfcfcf;
+    --grey-color: #858585;
+    --dark-grey-color: #404040;
+    /* font-size */
+    --large: 20px;
+    --small: 12px;
+
+    --h1: 40px;
+    --h2: 30px;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+
