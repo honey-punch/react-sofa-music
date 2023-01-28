@@ -19,4 +19,12 @@
     font-weight: 500;
 }
 
+.app-layout {
+    width: 100vh;
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    background: var(--main-color);
+}
+
 

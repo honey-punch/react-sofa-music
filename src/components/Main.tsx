@@ -1,0 +1,10 @@
+import React from 'react';
+import 'css/Main.css';
+
+export default function Main() {
+  return (
+    <main className='main'>
+      
+    </main>
+  )
+}
