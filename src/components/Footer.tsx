@@ -31,7 +31,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className='copyright'>copyright reserve</p>
+      <p className='copyright'>Copyright 2023. LILAC All rights reserved.</p>
     </footer>
   )
 }
