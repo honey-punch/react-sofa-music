@@ -8,17 +8,13 @@ import { useState } from "react";
 export default function Main() {
   const imgBox_list: NodeListOf<Element> = document.querySelectorAll(".img-box");
   const imgBox_array: Array<HTMLElement> = Array.prototype.slice.call(imgBox_list);
-
-  const [fadeState, setFadeState] = useState(false);
-
-  setTimeout(() => {setFadeState(true)}, 2000);
   
 
   return (
     <main className='main'>
-        <a href="#" className={fadeState ? 'img-box current' : 'img-box'}><img className='main-img' src={jacket1} alt="img" /></a>
-        <a href="#" className={fadeState ? 'img-box current' : 'img-box'}><img className='main-img' src={jacket1} alt="img" /></a>
-        <a href="#" className={fadeState ? 'img-box current' : 'img-box'}><img className='main-img' src={jacket1} alt="img" /></a>
+        <a href="#" className='img-box current'><img className='main-img' src={jacket1} alt="img" /></a>
+        <a href="#" className='img-box current'><img className='main-img' src={jacket2} alt="img" /></a>
+        <a href="#" className='img-box current'><img className='main-img' src={jacket3} alt="img" /></a>
     </main>
   )
 }
