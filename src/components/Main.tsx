@@ -5,10 +5,31 @@ import jacket2 from 'components/img/jacket2.jpg';
 import jacket3 from 'components/img/jacket3.jpg';
 import { useState } from "react";
 
+type ActiveInfo = {
+  id: number;
+  src: string;
+  isActive: boolean;
+}
+
 export default function Main() {
-  const imgBox_list: NodeListOf<Element> = document.querySelectorAll(".img-box");
-  const imgBox_array: Array<HTMLElement> = Array.prototype.slice.call(imgBox_list);
-  
+  const [imgBox, setImgBox] = useState<Array<ActiveInfo>>([
+    {
+      id: 1,
+      src: jacket1,
+      isActive: true,
+    },
+    {
+      id: 2,
+      src: jacket2,
+      isActive: false,
+    },
+    {
+      id: 3,
+      src: jacket3,
+      isActive: false,
+    }
+  ])
+
 
   return (
     <main className='main'>
