@@ -7,6 +7,7 @@ import jacket3 from 'components/img/jacket3.jpg';
 type ActiveInfo = {
   id: number;
   src: string;
+  title: string;
   isActive: boolean;
 }
 
@@ -15,16 +16,19 @@ export default function Main() {
     {
       id: 1,
       src: jacket1,
+      title: "The Beatles - REVOLVER",
       isActive: true,
     },
     {
       id: 2,
       src: jacket2,
+      title: "The Beatles - Let It Be",
       isActive: false,
     },
     {
       id: 3,
       src: jacket3,
+      title: "The Beatles - BEATLES'65",
       isActive: false,
     }
   ])
@@ -54,7 +58,12 @@ export default function Main() {
   return (
     <main className='main'>
         {imgBox.map((item) => (
-          <a href="#" key={item.id} className={item.isActive? 'img-box current' : 'img-box'}><img className='main-img' src={item.src} alt="img" /></a>
+          <div key={item.id} className={item.isActive ? 'img-box current' : 'img-box'}>
+            <a href="#" className='main-img'>
+              <img  src={item.src} alt="img" />
+            </a>
+            <p className='title'>{item.title}</p>
+          </div>
         ))}
     </main>
   )
