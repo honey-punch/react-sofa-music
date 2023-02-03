@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import 'css/Main.css';
 import jacket1 from 'components/img/jacket1.jpg';
 import jacket2 from 'components/img/jacket2.jpg';
 import jacket3 from 'components/img/jacket3.jpg';
-import { useState } from "react";
 
 type ActiveInfo = {
   id: number;
@@ -30,12 +29,33 @@ export default function Main() {
     }
   ])
 
+  useEffect(() => {
+    const id = setInterval(() => {
+      setImgBox((prev) => {
+        const currentIndex = prev.findIndex((item) => item.isActive);
+        const nextIndex = currentIndex < prev.length -1 ? currentIndex + 1 : 0;
+        const newList = prev.map((item, index) => {
+          return {
+            ...item,
+            isActive: nextIndex === index,
+          };
+        });
+
+        return newList;
+      });
+    }, 4000);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, [])
+
 
   return (
     <main className='main'>
-        <a href="#" className='img-box current'><img className='main-img' src={jacket1} alt="img" /></a>
-        <a href="#" className='img-box current'><img className='main-img' src={jacket2} alt="img" /></a>
-        <a href="#" className='img-box current'><img className='main-img' src={jacket3} alt="img" /></a>
+        {imgBox.map((item) => (
+          <a href="#" key={item.id} className={item.isActive? 'img-box current' : 'img-box'}><img className='main-img' src={item.src} alt="img" /></a>
+        ))}
     </main>
   )
 }
