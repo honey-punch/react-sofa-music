@@ -2,7 +2,7 @@
 
 ## 1. Description
 
-    -React를 가상의 엔터테인먼트 웹페이지
+    -React를 이용해 만든 가상의 음악 엔터테인먼트 웹페이지
 
 ## 2. Skills
 
