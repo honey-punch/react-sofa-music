@@ -1,8 +1,8 @@
-# Todo list
+# Sofa Music
 
 ## 1. Description
 
-    -React를 이용한 간단한 todo list
+    -React를 가상의 엔터테인먼트 웹페이지
 
 ## 2. Skills
 
@@ -11,17 +11,10 @@
 
 ## 3. Functions
 
-### Dialog
+### Main Image Auto Fade In & Out
 
-    -상단 버튼을 통해 Dialog 토글 기능
-    -Dialog의 close 버튼을 통해 닫기 기능
+    -조건문으로 className을 넣어 setInterval과 css(opacity, z-index)로 자동으로 전환되게끔 코딩
 
-### Form Submit
+### Side Nav
 
-    -Input 2개를 하나의 state로 관리해 Submit시 입력된 정보를 각각 TodoItem의 title, body에 할당
-
-### Todo item
-
-    -Dialog의 add 버튼으로 TodoList에 TodoItem을 배열 형태로 추가
-    -TodoItem의 -버튼으로 배열에서 TodoItem 삭제
-    -TodoItem의 check버튼으로 해당 TodoItem의 title, body에 line-through
+    -
