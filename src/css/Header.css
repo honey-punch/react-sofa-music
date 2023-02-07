@@ -1,5 +1,8 @@
 .logo {
   width: 100px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 .logo img {
   width: 100%;
