@@ -13,7 +13,7 @@
     z-index: 999;
     
 }
-.nav__aside {
+.nav-aside {
     background: rgba(100, 100, 100, 0.5);
 }
 .nav__aside button {
@@ -26,9 +26,10 @@
     color: var(--dark-grey-color);
 }
 
-.nav__scroll {
-    display: none;
-}
-.active {
-    display: flex;
-}
+/* .nav__scroll {
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+} */

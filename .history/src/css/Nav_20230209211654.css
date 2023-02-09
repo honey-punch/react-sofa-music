@@ -26,9 +26,10 @@
     color: var(--dark-grey-color);
 }
 
-.nav__scroll {
-    display: none;
-}
-.active {
-    display: flex;
-}
+/* .nav__scroll {
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+} */

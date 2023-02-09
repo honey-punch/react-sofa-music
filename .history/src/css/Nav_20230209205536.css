@@ -1,34 +1,23 @@
-.nav__ul {
+.nav {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px;
+    width: 10px;
     height: 100vh;
+    background: rgba(100, 100, 100, 0.5);
+    z-index: 999;
+}
+.nav__ul {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
     box-sizing: border-box;
-    z-index: 999;
-    
 }
-.nav__aside {
-    background: rgba(100, 100, 100, 0.5);
-}
-.nav__aside button {
+.nav__li button {
     transform: rotate(-90deg);
     padding: 4px;
     color: var(--white-color);
-    transition: 0.5s;
-}
-.nav__aside button:hover {
-    color: var(--dark-grey-color);
-}
-
-.nav__scroll {
-    display: none;
-}
-.active {
-    display: flex;
 }

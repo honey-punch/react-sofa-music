@@ -8,7 +8,7 @@ export default function Nav() {
     setScrollState(true);
   }
   const closeScroll = (): void => {
-    setScrollState(false)
+    setScrollState(true)
   }
 
   return (
@@ -19,7 +19,7 @@ export default function Nav() {
         <li className="aside__li"><button>SOFA TV</button></li>
       </ul>
       <ul className={scrollState ? "nav__ul nav__scroll active" : 'nav__ul nav__scroll'}>
-        <li className='close-btn'><button onClick={closeScroll}>close</button></li>
+        <li className='close-btn'><button onClick={}></button></li>
         <li className='scroll__li'>nav</li>
         <li className='scroll__li'>nav</li>
         <li className='scroll__li'>nav</li>
