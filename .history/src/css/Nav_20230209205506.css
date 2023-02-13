@@ -1,0 +1,23 @@
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100vh;
+    background: rgba(100, 100, 100, 0.5);
+    z-index: 999;
+}
+.nav__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+.nav__li button {
+    transform: rotate(-90deg);
+    padding: 4px;
+    color: var(--white-color);
+}

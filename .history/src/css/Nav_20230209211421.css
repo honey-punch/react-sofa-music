@@ -1,0 +1,36 @@
+.nav {
+    
+    
+}
+.nav__aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+    z-index: 999;
+    background: rgba(100, 100, 100, 0.5);
+}
+.nav__aside button {
+    transform: rotate(-90deg);
+    padding: 4px;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+.nav__aside button:hover {
+    color: var(--dark-grey-color);
+}
+
+/* .nav__scroll {
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+} */

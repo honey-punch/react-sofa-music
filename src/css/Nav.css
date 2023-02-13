@@ -1,0 +1,90 @@
+.nav__ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    box-sizing: border-box;
+    z-index: 999;
+    
+}
+.nav__aside {
+    background: rgba(100, 100, 100, 0.5);
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__aside button {
+    transform: rotate(-90deg);
+    padding: 4px;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+.nav__aside button:hover {
+    color: var(--dark-grey-color);
+}
+
+.nav__scroll {
+    width: 100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 100px;
+    box-sizing: border-box;
+}
+.active {
+    width: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+.close-btn {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+.close-btn button {
+    color: white;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.scroll__li {
+    margin: 20px 0;
+}
+.scroll__li a {
+    color: var(--white-color);
+    transition: 0.2s;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.scroll__li a:hover {
+    color: var(--grey-color);
+}
+
+.info-sns-wrap {
+    margin-top: 40px;
+}
+.info {
+    margin-bottom: 20px;
+}
+.info p {
+    font-size: var(--small);
+    font-weight: 300;
+}
+.sns {
+    display: flex;
+}
+.sns a {
+    color: var(--white-color);
+    padding: 4px;
+    margin-right: 12px;
+    transition: 0.2s;
+}
+.sns a:hover {
+    color: var(--grey-color);
+}

@@ -3,6 +3,7 @@ import 'css/Main.css';
 import jacket1 from 'components/img/jacket1.jpg';
 import jacket2 from 'components/img/jacket2.jpg';
 import jacket3 from 'components/img/jacket3.jpg';
+import Nav from 'components/Nav'
 
 type ActiveInfo = {
   id: number;
@@ -65,6 +66,8 @@ export default function Main() {
             <p className='title'>{item.title}</p>
           </div>
         ))}
+        <Nav></Nav>
     </main>
+    
   )
 }
