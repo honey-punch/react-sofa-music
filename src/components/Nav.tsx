@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import 'css/Nav.css';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
 
@@ -15,7 +16,7 @@ export default function Nav() {
     <nav className='nav'>
       <ul className="nav__ul nav__aside">
         <li className="aside__li"><button onClick={openScroll}>FULL MENU</button></li>
-        <li className="aside__li"><button>ARTIST</button></li>
+        <li className="aside__li"><Link to={'/artist'} className='link-btn'>ARTIST</Link></li>
         <li className="aside__li"><button>SOFA TV</button></li>
       </ul>
       <ul className={scrollState ? "nav__ul nav__scroll active" : 'nav__ul nav__scroll'}>
