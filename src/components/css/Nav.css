@@ -16,16 +16,16 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav__aside button,
-.nav__aside .link-btn {
+.aside__btn,
+.aside__link {
     display: block;
     transform: rotate(-90deg);
     padding: 4px;
     color: var(--white-color);
     transition: 0.5s;
 }
-.nav__aside button:hover,
-.nav__aside .link-btn:hover {
+.aside__btn:hover,
+.aside__link:hover {
     color: var(--dark-grey-color);
 }
 
@@ -38,7 +38,6 @@
     align-items: flex-start;
     background: var(--black-color);
     color: var(--white-color);
-    padding: 100px;
     box-sizing: border-box;
 }
 .active {
@@ -54,10 +53,10 @@
 .close-btn button {
     color: white;
     padding: 4px;
-    box-sizing: border-box;
 }
 .scroll__li {
-    margin: 20px 0;
+    margin: 20px 100px;
+    box-sizing: border-box;
 }
 .scroll__li a {
     color: var(--white-color);

@@ -15,10 +15,11 @@ export default function Nav() {
   return (
     <nav className='nav'>
       <ul className="nav__ul nav__aside">
-        <li className="aside__li"><button onClick={openScroll}>FULL MENU</button></li>
-        <li className="aside__li"><Link to={'/artist'} className='link-btn'>ARTIST</Link></li>
-        <li className="aside__li"><button>SOFA TV</button></li>
+        <li className="aside__li"><button className='aside__btn' onClick={openScroll}>FULL MENU</button></li>
+        <li className="aside__li"><Link className='aside__link' to={'/artist'}>ARTIST</Link></li>
+        <li className="aside__li"><button className='aside__btn'>SOFA TV</button></li>
       </ul>
+
       <ul className={scrollState ? "nav__ul nav__scroll active" : 'nav__ul nav__scroll'}>
         <li className='close-btn'>
           <button onClick={closeScroll}>
@@ -32,7 +33,7 @@ export default function Nav() {
         <li className='scroll__li'><a href="#">CONCERT</a></li>
         <li className='scroll__li'><a href="#">NEWS</a></li>
         <li className='scroll__li'><a href="#">AUDITION</a></li>
-        <li className='info-sns-wrap'>
+        <li className='scroll__li info-sns-wrap'>
           <div className="info">
             <p>EDITION OF SOFA ENTERTAINMENT</p>
             <br />

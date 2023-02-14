@@ -22,18 +22,18 @@
   justify-content: center;
   align-items: center;
 }
-.main-img {
+.img-box__a {
   display: block;
   width: 100%;
   height: auto;
   transition: width 0.5s, height 0.5s;
 }
 
-.main-img:hover {
+.img-box__a:hover {
   width: 110%;
   height: auto;
 }
-.main-img img{
+.img-box__img{
   width: 100%;
   height: auto;
   object-fit: cover;

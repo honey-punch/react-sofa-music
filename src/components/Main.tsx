@@ -60,8 +60,8 @@ export default function Main() {
     <main className='main'>
         {imgBox.map((item) => (
           <div key={item.id} className={item.isActive ? 'img-box current' : 'img-box'}>
-            <a href="#" className='main-img'>
-              <img  src={item.src} alt="img" />
+            <a href="#" className='img-box__a'>
+              <img className='img-box__img' src={item.src} alt="img" />
             </a>
             <p className='title'>{item.title}</p>
           </div>
