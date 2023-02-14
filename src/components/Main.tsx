@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import 'css/Main.css';
+import 'components/css/Main.css';
 import jacket1 from 'components/img/jacket1.jpg';
 import jacket2 from 'components/img/jacket2.jpg';
 import jacket3 from 'components/img/jacket3.jpg';

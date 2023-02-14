@@ -4,7 +4,7 @@ import 'reset.css';
 import Header from 'components/Header'
 import Main from 'components/Main'
 import Footer from 'components/Footer'
-import MainController from 'pages/MainController';
+import Artist from 'pages/Artist';
 import routes from "routes/routers";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -13,10 +13,11 @@ export default function AppLayout() {
         <div className='app-layout'>
             <BrowserRouter>
                 <Header />
-                {/* {routes.map((route) => <Router key={} url={route.url} components={route.component} />) } */}
+                {/* 연결되는 페이지가 많아지면 route를 따로 관리할 것
+                {routes.map((route) => <Route key={route.key} path={route.path} element={route.element} />) } */}
                 <Routes>
                     <Route path='/' element={<Main />}></Route>
-                    <Route path='/artist' element={<MainController />}></Route>
+                    <Route path='/artist' element={<Artist />}></Route>
                 </Routes>
                 <Footer />
             </BrowserRouter>
