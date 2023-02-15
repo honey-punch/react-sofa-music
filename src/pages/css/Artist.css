@@ -14,27 +14,48 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 70px;
+    gap: 50px;
 }
 .artist__li {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     position: relative;
+    clip-path: circle(125px at center center);
 }
 .artist__img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .artist__link {
     display: block;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background-color: rgba(122, 20, 201, 0.5);
     position: absolute;
-    top: -300px;
+    top: -250px;
     left: 0;
-    /* border-radius: 50%; */
-    clip-path: circle(150px at center center);
-    opacity: 0.5;
+    transition: 0.1s;
+}
+.active {
+    top: 0;
+}
+.artist__name {
+    color: var(--white-color);
+    font-size: var(--large);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+.artist__more {
+    color: var(--white-color);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
 }
