@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 import Nav from "components/Nav";
 import 'pages/css/Artist.css';
 import { Link } from 'react-router-dom';
@@ -17,13 +17,15 @@ export default function Artist() {
     ringo: false,
   });
   
-  const mouseEnter = (key: members): void => {
+  const mouseEnter = (key: members, e:React.MouseEvent<Element, MouseEvent>): void => {
+    e.preventDefault();
     setLinkState({
       ...linkState,
       [key]: true
     });
   }
-  const mouseLeave = (key: members): void => {
+  const mouseLeave = (key: members, e:React.MouseEvent<Element, MouseEvent>): void => {
+    e.preventDefault();
     setLinkState({
       ...linkState,
       [key]: false
@@ -33,28 +35,40 @@ export default function Artist() {
   return (
     <main className='main'>
       <ul className='artist__ul'>
-        <li className='artist__li' onMouseEnter={() => mouseEnter('john')} onMouseLeave={() => mouseLeave('john')}>
+        <li className='artist__li'
+            onMouseEnter={(e) => mouseEnter('john', e)}
+            onMouseLeave={(e) => mouseLeave('john', e)}
+        >
           <img className='artist__img' src={john} alt="john" />
           <Link className={linkState.john ? 'artist__link active' : 'artist__link'} to='/artist/1'>
             <h2 className='artist__name'>John Lennon</h2>
             <p className='artist__more'>more</p>
           </Link>
         </li>
-        <li className='artist__li' onMouseEnter={() => mouseEnter('paul')} onMouseLeave={() => mouseLeave('paul')}>
+        <li className='artist__li'
+            onMouseEnter={(e) => mouseEnter('paul', e)}
+            onMouseLeave={(e) => mouseLeave('paul', e)}
+        >
           <img className='artist__img' src={paul} alt="paul" />
           <Link className={linkState.paul ? 'artist__link active' : 'artist__link'} to='/artist/2'>
             <h2 className='artist__name'>Paul McCartney</h2>
             <p className='artist__more'>more</p>
           </Link>
         </li>
-        <li className='artist__li' onMouseEnter={() => mouseEnter('george')} onMouseLeave={() => mouseLeave('george')}>
+        <li className='artist__li'
+            onMouseEnter={(e) => mouseEnter('george', e)}
+            onMouseLeave={(e) => mouseLeave('george', e)}
+        >
           <img className='artist__img' src={george} alt="george" />
           <Link className={linkState.george ? 'artist__link active' : 'artist__link'} to='/artist/3'>
             <h2 className='artist__name'>George Harrison</h2>
             <p className='artist__more'>more</p>
           </Link>
         </li>
-        <li className='artist__li' onMouseEnter={() => mouseEnter('ringo')} onMouseLeave={() => mouseLeave('ringo')}>
+        <li className='artist__li'
+            onMouseEnter={(e) => mouseEnter('ringo', e)}
+            onMouseLeave={(e) => mouseLeave('ringo', e)}
+        >
           <img className='artist__img' src={ringo} alt="ringo" />
           <Link className={linkState.ringo ? 'artist__link active' : 'artist__link'} to='/artist/4'>
             <h2 className='artist__name'>Ringo Starr</h2>
