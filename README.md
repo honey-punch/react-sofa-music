@@ -8,6 +8,7 @@
 
     -React
     -TS
+    -CSS
 
 ## 3. Functions
 
@@ -17,4 +18,9 @@
 
 ### Side Nav
 
-    -
+    -조건문으로 state에 따른 className을 넣어 nav영역의 scroll 구현
+
+### Artist Page
+
+    -React Router Dom을 이용, Nav의 Artist 항목을 통해 Artist페이지로 이동
+    -각각 member들의 state를 하나로 묶어서 관리, mouseEnter, mouseLeave 함수로 각 member의 Link 부분 slide down기능 구현
