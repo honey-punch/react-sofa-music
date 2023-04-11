@@ -1,23 +1,16 @@
 {
   "files": {
     "main.css": "/react-sofa-music/static/css/main.7843c8f5.css",
-    "main.js": "/react-sofa-music/static/js/main.1816390b.js",
+    "main.js": "/react-sofa-music/static/js/main.b713e795.js",
     "static/js/787.30711be8.chunk.js": "/react-sofa-music/static/js/787.30711be8.chunk.js",
     "static/media/background.jpg": "/react-sofa-music/static/media/background.f7c1e39ed6cbf685ccbf.jpg",
-    "static/media/1.john.png": "/react-sofa-music/static/media/1.john.df0460f7f971817b4574.png",
-    "static/media/3.george.png": "/react-sofa-music/static/media/3.george.2f0b3b20e46e9f53a662.png",
-    "static/media/2.paul.png": "/react-sofa-music/static/media/2.paul.bdbbecc18d4cf6f9fdd4.png",
-    "static/media/4.ringo.png": "/react-sofa-music/static/media/4.ringo.dacd0bf7d98a1f97298c.png",
-    "static/media/jacket1.jpg": "/react-sofa-music/static/media/jacket1.811dfec14025e8a05d72.jpg",
-    "static/media/jacket3.jpg": "/react-sofa-music/static/media/jacket3.33bedb01c19dfb1ce787.jpg",
-    "static/media/jacket2.jpg": "/react-sofa-music/static/media/jacket2.11f0ec75e9a38ad0f300.jpg",
     "index.html": "/react-sofa-music/index.html",
     "main.7843c8f5.css.map": "/react-sofa-music/static/css/main.7843c8f5.css.map",
-    "main.1816390b.js.map": "/react-sofa-music/static/js/main.1816390b.js.map",
+    "main.b713e795.js.map": "/react-sofa-music/static/js/main.b713e795.js.map",
     "787.30711be8.chunk.js.map": "/react-sofa-music/static/js/787.30711be8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7843c8f5.css",
-    "static/js/main.1816390b.js"
+    "static/js/main.b713e795.js"
   ]
 }
