@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import 'components/css/Main.css';
-import jacket1 from 'components/img/jacket1.jpg';
-import jacket2 from 'components/img/jacket2.jpg';
-import jacket3 from 'components/img/jacket3.jpg';
 import Nav from 'components/Nav'
 
 type ActiveInfo = {
@@ -16,19 +13,19 @@ export default function Main() {
   const [imgBox, setImgBox] = useState<Array<ActiveInfo>>([
     {
       id: 1,
-      src: jacket1,
+      src: '/img/jacket1.jpg',
       title: "The Beatles - REVOLVER",
       isActive: true,
     },
     {
       id: 2,
-      src: jacket2,
+      src: '/img/jacket2.jpg',
       title: "The Beatles - Let It Be",
       isActive: false,
     },
     {
       id: 3,
-      src: jacket3,
+      src: '/img/jacket3.jpg',
       title: "The Beatles - BEATLES'65",
       isActive: false,
     }
@@ -61,7 +58,7 @@ export default function Main() {
         {imgBox.map((item) => (
           <div key={item.id} className={item.isActive ? 'img-box current' : 'img-box'}>
             <a href="#" className='img-box__a'>
-              <img className='img-box__img' src={item.src} alt="img" />
+              <img className='img-box__img' src={process.env.PUBLIC_URL + item.src} alt="img" />
             </a>
             <p className='title'>{item.title}</p>
           </div>
