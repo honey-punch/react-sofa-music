@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-sofa-music/static/css/main.7843c8f5.css",
-    "main.js": "/react-sofa-music/static/js/main.b713e795.js",
+    "main.js": "/react-sofa-music/static/js/main.2c9a65ca.js",
     "static/js/787.30711be8.chunk.js": "/react-sofa-music/static/js/787.30711be8.chunk.js",
     "static/media/background.jpg": "/react-sofa-music/static/media/background.f7c1e39ed6cbf685ccbf.jpg",
     "index.html": "/react-sofa-music/index.html",
     "main.7843c8f5.css.map": "/react-sofa-music/static/css/main.7843c8f5.css.map",
-    "main.b713e795.js.map": "/react-sofa-music/static/js/main.b713e795.js.map",
+    "main.2c9a65ca.js.map": "/react-sofa-music/static/js/main.2c9a65ca.js.map",
     "787.30711be8.chunk.js.map": "/react-sofa-music/static/js/787.30711be8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7843c8f5.css",
-    "static/js/main.b713e795.js"
+    "static/js/main.2c9a65ca.js"
   ]
 }
