@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className='header'>
       <h1 className='logo'>
-        <Link className='link-btn' to='/'><img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="logo"/></Link>
+        <Link className='link-btn' to='/react-sofa-music'><img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="logo"/></Link>
       </h1>
     </header>
   )

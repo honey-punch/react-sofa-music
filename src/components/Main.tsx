@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'components/css/Main.css';
 import Nav from 'components/Nav'
+import { log } from 'console';
 
 type ActiveInfo = {
   id: number;
@@ -33,10 +34,10 @@ export default function Main() {
 
   useEffect(() => {
     const id = setInterval(() => {
-      setImgBox((prev) => {
-        const currentIndex = prev.findIndex((item) => item.isActive);
-        const nextIndex = currentIndex < prev.length -1 ? currentIndex + 1 : 0;
-        const newList = prev.map((item, index) => {
+      setImgBox((array) => {
+        const currentIndex = array.findIndex(item => item.isActive);
+        const nextIndex = currentIndex < array.length -1 ? currentIndex + 1 : 0;
+        const newList = array.map((item, index) => {
           return {
             ...item,
             isActive: nextIndex === index,
